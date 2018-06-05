@@ -14,6 +14,14 @@ public class Message {
 		super();
 		// TODO Auto-generated constructor stub
 	}
+	
+	
+	public Message(int mESSAGEID) {
+		super();
+		MESSAGEID = mESSAGEID;
+	}
+
+
 	public Message(String uSERCOOUNT, String mESSAGETITLE, String mESSAGECONTENT, String mESSAGEDATE) {
 		super();
 		USERCOOUNT = uSERCOOUNT;
