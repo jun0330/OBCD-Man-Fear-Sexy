@@ -26,6 +26,14 @@ public class Admin {
 		ADMINPWD = aDMINPWD;
 		ADMINNICKNAME = aDMINNICKNAME;
 	}
+	public Admin(String aDMINPWD, String aDMINNICKNAME,int aDMINID) {
+		super();
+		
+		
+		ADMINPWD = aDMINPWD;
+		ADMINNICKNAME = aDMINNICKNAME;
+		ADMINID = aDMINID;
+	}
 	public int getADMINID() {
 		return ADMINID;
 	}
