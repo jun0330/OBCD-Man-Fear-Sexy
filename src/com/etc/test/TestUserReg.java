@@ -8,10 +8,9 @@ public class TestUserReg {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		UserService us=new UserServiceImpl();
-		User u=new User(1,"账户","123456","名称","男","123456","123","厦门",null);
+		UserService us = new UserServiceImpl();
+		User u = new User(3, "s", "123", "ds", "ds", "das", "dsa", "dsa");
 		boolean flag=us.UserReg(u);
-		
 		if(flag) {
 			System.out.println("注册成功");
 		}else {
@@ -19,7 +18,5 @@ public class TestUserReg {
 		}
 
 	}
-
-
 
 }

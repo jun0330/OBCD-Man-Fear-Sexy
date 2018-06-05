@@ -14,4 +14,16 @@ public class UserServiceImpl implements UserService {
 		return ud.addUser(user);
 	}
 
+	@Override
+	public User userLogin(String userAccount, String userPwd) {
+		// TODO Auto-generated method stub
+		return ud.queryUserByAccountAndPwd(userAccount, userPwd);
+	}
+	
+@Override
+public boolean updateGetUser(User user) {
+	// TODO Auto-generated method stub
+	return ud.updateUser(user);
+}
+
 }

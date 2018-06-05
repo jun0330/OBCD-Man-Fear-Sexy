@@ -8,7 +8,7 @@ public class User {
 	private String USERNICKNAME;
 	private String USERSEX;
 	private String USERIDCARD;
-	private String USEREMALL;
+	private String USEREMAIL;
 	private String USERADDRESS;
 	private String USERDATE;
 	
@@ -18,7 +18,7 @@ public class User {
 	}
 
 	public User(int uSERID, String uSERACCOUNT, String uSERPWD, String uSERNICKNAME, String uSERSEX, String uSERIDCARD,
-			String uSEREMALL, String uSERADDRESS, String uSERDATE) {
+			String uSEREMAIL, String uSERADDRESS, String uSERDATE) {
 		super();
 		USERID = uSERID;
 		USERACCOUNT = uSERACCOUNT;
@@ -26,9 +26,36 @@ public class User {
 		USERNICKNAME = uSERNICKNAME;
 		USERSEX = uSERSEX;
 		USERIDCARD = uSERIDCARD;
-		USEREMALL = uSEREMALL;
+		USEREMAIL = uSEREMAIL;
 		USERADDRESS = uSERADDRESS;
 		USERDATE = uSERDATE;
+	}
+	public User(int uSERID, String uSERACCOUNT, String uSERPWD, String uSERNICKNAME, String uSERSEX, String uSERIDCARD,
+			String uSEREMAIL, String uSERADDRESS) {
+		super();
+		USERID = uSERID;
+		USERACCOUNT = uSERACCOUNT;
+		USERPWD = uSERPWD;
+		USERNICKNAME = uSERNICKNAME;
+		USERSEX = uSERSEX;
+		USERIDCARD = uSERIDCARD;
+		USEREMAIL = uSEREMAIL;
+		USERADDRESS = uSERADDRESS;
+	
+	}
+	
+	public User(String uSERPWD, String uSERNICKNAME, String uSERSEX, String uSERIDCARD,
+			String uSEREMAIL, String uSERADDRESS,int uSERID) {
+		super();
+		
+		
+		USERPWD = uSERPWD;
+		USERNICKNAME = uSERNICKNAME;
+		USERSEX = uSERSEX;
+		USERIDCARD = uSERIDCARD;
+		USEREMAIL = uSEREMAIL;
+		USERADDRESS = uSERADDRESS;
+		USERID = uSERID;
 	}
 
 	public int getUSERID() {
@@ -79,12 +106,12 @@ public class User {
 		USERIDCARD = uSERIDCARD;
 	}
 
-	public String getUSEREMALL() {
-		return USEREMALL;
+	public String getUSEREMAIL() {
+		return USEREMAIL;
 	}
 
-	public void setUSEREMALL(String uSEREMALL) {
-		USEREMALL = uSEREMALL;
+	public void setUSEREMAIL(String uSEREMAIL) {
+		USEREMAIL = uSEREMAIL;
 	}
 
 	public String getUSERADDRESS() {
@@ -106,7 +133,7 @@ public class User {
 	@Override
 	public String toString() {
 		return "User [USERID=" + USERID + ", USERACCOUNT=" + USERACCOUNT + ", USERPWD=" + USERPWD + ", USERNICKNAME="
-				+ USERNICKNAME + ", USERSEX=" + USERSEX + ", USERIDCARD=" + USERIDCARD + ", USEREMALL=" + USEREMALL
+				+ USERNICKNAME + ", USERSEX=" + USERSEX + ", USERIDCARD=" + USERIDCARD + ", USEREMAIL=" + USEREMAIL
 				+ ", USERADDRESS=" + USERADDRESS + ", USERDATE=" + USERDATE + "]";
 	}
 	
