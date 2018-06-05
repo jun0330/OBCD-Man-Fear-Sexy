@@ -1,0 +1,25 @@
+package com.etc.test;
+
+import com.etc.entity.User;
+import com.etc.service.impl.UserServiceImpl;
+import com.etc.service01.UserService;
+
+public class TestUserReg {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		UserService us=new UserServiceImpl();
+		User u=new User(1,"ÕË»§","123456","Ãû³Æ","ÄÐ","123456","123","ÏÃÃÅ",null);
+		boolean flag=us.UserReg(u);
+		
+		if(flag) {
+			System.out.println("×¢²á³É¹¦");
+		}else {
+			System.out.println("×¢²áÊ§°Ü");
+		}
+
+	}
+
+
+
+}

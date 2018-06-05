@@ -7,101 +7,113 @@ public class User {
 	private String USERPWD;
 	private String USERNICKNAME;
 	private String USERSEX;
-	private String IDCARD;
-	private String EMALL;
-	private String ADDRESS;
-	private String DATE;
-	
+	private String USERIDCARD;
+	private String USEREMALL;
+	private String USERADDRESS;
+	private String USERDATE;
 	
 	public User() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	public User(String uSERACCOUNT, String uSERPWD, String uSERNICKNAME, String uSERSEX, String iDCARD, String eMALL,
-			String aDDRESS, String dATE) {
-		super();
-		USERACCOUNT = uSERACCOUNT;
-		USERPWD = uSERPWD;
-		USERNICKNAME = uSERNICKNAME;
-		USERSEX = uSERSEX;
-		IDCARD = iDCARD;
-		EMALL = eMALL;
-		ADDRESS = aDDRESS;
-		DATE = dATE;
-	}
-	public User(int uSERID, String uSERACCOUNT, String uSERPWD, String uSERNICKNAME, String uSERSEX, String iDCARD,
-			String eMALL, String aDDRESS, String dATE) {
+
+	public User(int uSERID, String uSERACCOUNT, String uSERPWD, String uSERNICKNAME, String uSERSEX, String uSERIDCARD,
+			String uSEREMALL, String uSERADDRESS, String uSERDATE) {
 		super();
 		USERID = uSERID;
 		USERACCOUNT = uSERACCOUNT;
 		USERPWD = uSERPWD;
 		USERNICKNAME = uSERNICKNAME;
 		USERSEX = uSERSEX;
-		IDCARD = iDCARD;
-		EMALL = eMALL;
-		ADDRESS = aDDRESS;
-		DATE = dATE;
+		USERIDCARD = uSERIDCARD;
+		USEREMALL = uSEREMALL;
+		USERADDRESS = uSERADDRESS;
+		USERDATE = uSERDATE;
 	}
+
 	public int getUSERID() {
 		return USERID;
 	}
+
 	public void setUSERID(int uSERID) {
 		USERID = uSERID;
 	}
+
 	public String getUSERACCOUNT() {
 		return USERACCOUNT;
 	}
+
 	public void setUSERACCOUNT(String uSERACCOUNT) {
 		USERACCOUNT = uSERACCOUNT;
 	}
+
 	public String getUSERPWD() {
 		return USERPWD;
 	}
+
 	public void setUSERPWD(String uSERPWD) {
 		USERPWD = uSERPWD;
 	}
+
 	public String getUSERNICKNAME() {
 		return USERNICKNAME;
 	}
+
 	public void setUSERNICKNAME(String uSERNICKNAME) {
 		USERNICKNAME = uSERNICKNAME;
 	}
+
 	public String getUSERSEX() {
 		return USERSEX;
 	}
+
 	public void setUSERSEX(String uSERSEX) {
 		USERSEX = uSERSEX;
 	}
-	public String getIDCARD() {
-		return IDCARD;
+
+	public String getUSERIDCARD() {
+		return USERIDCARD;
 	}
-	public void setIDCARD(String iDCARD) {
-		IDCARD = iDCARD;
+
+	public void setUSERIDCARD(String uSERIDCARD) {
+		USERIDCARD = uSERIDCARD;
 	}
-	public String getEMALL() {
-		return EMALL;
+
+	public String getUSEREMALL() {
+		return USEREMALL;
 	}
-	public void setEMALL(String eMALL) {
-		EMALL = eMALL;
+
+	public void setUSEREMALL(String uSEREMALL) {
+		USEREMALL = uSEREMALL;
 	}
-	public String getADDRESS() {
-		return ADDRESS;
+
+	public String getUSERADDRESS() {
+		return USERADDRESS;
 	}
-	public void setADDRESS(String aDDRESS) {
-		ADDRESS = aDDRESS;
+
+	public void setUSERADDRESS(String uSERADDRESS) {
+		USERADDRESS = uSERADDRESS;
 	}
-	public String getDATE() {
-		return DATE;
+
+	public String getUSERDATE() {
+		return USERDATE;
 	}
-	public void setDATE(String dATE) {
-		DATE = dATE;
+
+	public void setUSERDATE(String uSERDATE) {
+		USERDATE = uSERDATE;
 	}
+
 	@Override
 	public String toString() {
 		return "User [USERID=" + USERID + ", USERACCOUNT=" + USERACCOUNT + ", USERPWD=" + USERPWD + ", USERNICKNAME="
-				+ USERNICKNAME + ", USERSEX=" + USERSEX + ", IDCARD=" + IDCARD + ", EMALL=" + EMALL + ", ADDRESS="
-				+ ADDRESS + ", DATE=" + DATE + "]";
+				+ USERNICKNAME + ", USERSEX=" + USERSEX + ", USERIDCARD=" + USERIDCARD + ", USEREMALL=" + USEREMALL
+				+ ", USERADDRESS=" + USERADDRESS + ", USERDATE=" + USERDATE + "]";
 	}
+	
+	
+	
+	
+	
 	
 	
 
