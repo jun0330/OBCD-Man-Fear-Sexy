@@ -3,7 +3,7 @@ package com.etc.service.impl;
 import com.etc.dao.UserDao;
 import com.etc.dao.impl.UserDaoImpl;
 import com.etc.entity.User;
-import com.etc.service01.UserService;
+import com.etc.service.UserService;
 
 public class UserServiceImpl implements UserService {
 	UserDao ud=new UserDaoImpl();

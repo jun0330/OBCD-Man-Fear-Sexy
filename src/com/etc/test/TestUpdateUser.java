@@ -3,8 +3,8 @@ package com.etc.test;
 import java.util.List;
 
 import com.etc.entity.User;
+import com.etc.service.UserService;
 import com.etc.service.impl.UserServiceImpl;
-import com.etc.service01.UserService;
 import com.etc.util.DBUtil;
 
 public class TestUpdateUser {

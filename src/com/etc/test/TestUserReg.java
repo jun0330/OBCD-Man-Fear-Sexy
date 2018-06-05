@@ -1,8 +1,8 @@
 package com.etc.test;
 
 import com.etc.entity.User;
+import com.etc.service.UserService;
 import com.etc.service.impl.UserServiceImpl;
-import com.etc.service01.UserService;
 
 public class TestUserReg {
 
