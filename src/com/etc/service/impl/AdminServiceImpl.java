@@ -3,7 +3,7 @@ package com.etc.service.impl;
 import com.etc.dao.AdminDao;
 import com.etc.dao.impl.AdminDaoImpl;
 import com.etc.entity.Admin;
-import com.etc.service01.AdminService;
+import com.etc.service.AdminService;
 
 public class AdminServiceImpl implements AdminService {
 	AdminDao ad=new AdminDaoImpl();

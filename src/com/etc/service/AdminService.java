@@ -1,4 +1,4 @@
-package com.etc.service01;
+package com.etc.service;
 
 import com.etc.entity.Admin;
 

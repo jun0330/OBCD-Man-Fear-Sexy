@@ -3,8 +3,8 @@ package com.etc.test;
 import java.util.List;
 
 import com.etc.entity.Admin;
+import com.etc.service.AdminService;
 import com.etc.service.impl.AdminServiceImpl;
-import com.etc.service01.AdminService;
 import com.etc.util.DBUtil;
 
 public class TestAdminLogin {
@@ -16,9 +16,9 @@ public class TestAdminLogin {
 		Admin a=as.adminLogin("qq", "123");
 		
 			if(a!=null) {
-				System.out.println("µÇÂ½³É¹¦");
+				System.out.println("ï¿½ï¿½Â½ï¿½É¹ï¿½");
 			}else {
-				System.out.println("µÇÂ½Ê§°Ü");
+				System.out.println("ï¿½ï¿½Â½Ê§ï¿½ï¿½");
 			}
 			
 

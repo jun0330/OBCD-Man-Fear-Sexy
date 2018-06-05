@@ -3,8 +3,8 @@ package com.etc.test;
 import java.util.List;
 
 import com.etc.entity.Admin;
+import com.etc.service.AdminService;
 import com.etc.service.impl.AdminServiceImpl;
-import com.etc.service01.AdminService;
 import com.etc.util.DBUtil;
 
 public class TestUpdateAdmin {
@@ -18,9 +18,9 @@ public class TestUpdateAdmin {
 		boolean flag=as.updateGetAdmin(admin);
 		
 			if(flag) {
-				System.out.println("ÐÞ¸Ä³É¹¦");
+				System.out.println("ï¿½Þ¸Ä³É¹ï¿½");
 			}else {
-				System.out.println("ÐÞ¸ÄÊ§°Ü");
+				System.out.println("ï¿½Þ¸ï¿½Ê§ï¿½ï¿½");
 			}
 			
 

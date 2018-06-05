@@ -1,8 +1,8 @@
 package com.etc.test;
 
 import com.etc.entity.Admin;
+import com.etc.service.AdminService;
 import com.etc.service.impl.AdminServiceImpl;
-import com.etc.service01.AdminService;
 
 public class TestAdminReg {
 
@@ -12,9 +12,9 @@ public class TestAdminReg {
 		Admin a = new Admin(1, "ss", "123", "ds");
 		boolean flag=as.AdminReg(a);
 		if(flag) {
-			System.out.println("×¢²á³É¹¦");
+			System.out.println("×¢ï¿½ï¿½É¹ï¿½");
 		}else {
-			System.out.println("×¢²áÊ§°Ü");
+			System.out.println("×¢ï¿½ï¿½Ê§ï¿½ï¿½");
 		}
 
 	}
