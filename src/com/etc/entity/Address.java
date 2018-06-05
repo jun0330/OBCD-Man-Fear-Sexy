@@ -9,6 +9,10 @@ public class Address {
 	
 	
 	
+	public Address() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
 	public Address(String aDDRESSNAME, String aDDRESSPHONE, String aDDRESSADDR, int uSERID) {
 		super();
 		ADDRESSNAME = aDDRESSNAME;
