@@ -1,11 +1,17 @@
 package com.etc.controller;
 
 import java.io.IOException;
+import java.util.List;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
+import com.etc.entity.Nav;
+import com.etc.service.NavService;
+import com.etc.service.impl.NavServiceImpl;
 
 /**
  * Servlet implementation class NavController
@@ -13,7 +19,7 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet("/NavController")
 public class NavController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
+    NavService ns=new NavServiceImpl();
     /**
      * @see HttpServlet#HttpServlet()
      */
@@ -31,7 +37,9 @@ public class NavController extends HttpServlet {
 			op=request.getParameter("op");
 		}
 		if("query".equals(op)) {
-			
+			List<Nav> navList=ns.getNav();
+			request.setAttribute("navList", navList);
+			request.getRequestDispatcher("admin/nav-list.jsp").forward(request, response);
 		}
 		
 	}
