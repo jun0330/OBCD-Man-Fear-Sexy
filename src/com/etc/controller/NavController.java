@@ -37,6 +37,7 @@ public class NavController extends HttpServlet {
 			op=request.getParameter("op");
 		}
 		if("query".equals(op)) {
+			
 			List<Nav> navList=ns.getNav();
 			request.setAttribute("navList", navList);
 			request.getRequestDispatcher("admin/nav-list.jsp").forward(request, response);
