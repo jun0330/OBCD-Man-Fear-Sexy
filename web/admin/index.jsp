@@ -1,4 +1,7 @@
-﻿<!DOCTYPE HTML>
+﻿<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<!DOCTYPE HTML>
 <html>
 <head>
 <meta charset="utf-8">
@@ -27,6 +30,7 @@
 </head>
 <body>
 <header class="navbar-wrapper">
+	
 	<div class="navbar navbar-fixed-top">
 		<div class="container-fluid cl"> <a class="logo navbar-logo f-l mr-10 hidden-xs" href="/aboutHui.shtml">welcome</a> <a class="logo navbar-logo-m f-l mr-10 visible-xs" href="/aboutHui.shtml">H-ui</a> 
 			<span class="logo navbar-slogan f-l mr-10 hidden-xs"></span> 
@@ -43,17 +47,25 @@
 				</li>
 			</ul>
 		</nav>-->
+		
+  
 		<nav id="Hui-userbar" class="nav navbar-nav navbar-userbar hidden-xs">
 			<ul class="cl">
-				<li>超级管理员</li>
+				<li>管理员</li>
+				
 				<li class="dropDown dropDown_hover">
-					<a href="#" class="dropDown_A">admin<i class="Hui-iconfont">&#xe6d5;</i></a>
+				
+					<a href="#" class="dropDown_A">${sessionScope.adminAccount}<i class="Hui-iconfont">&#xe6d5;</i></a>
+			
 					<ul class="dropDown-menu menu radius box-shadow">
 						<li><a href="javascript:;" onClick="myselfinfo()">个人信息</a></li>
-						<li><a href="#">切换账户</a></li>
-						<li><a href="#">退出</a></li>
+						<li><a href="login.jsp">切换账户</a></li>
+						<li><a href="login.jsp">退出</a></li>
 				</ul>
+			
 			</li>
+			
+			
 				<li id="Hui-msg"> <a href="#" title="消息"><span class="badge badge-danger">1</span><i class="Hui-iconfont" style="font-size:18px">&#xe68a;</i></a> </li>
 				<li id="Hui-skin" class="dropDown right dropDown_hover"> <a href="javascript:;" class="dropDown_A" title="换肤"><i class="Hui-iconfont" style="font-size:18px">&#xe62a;</i></a>
 					<ul class="dropDown-menu menu radius box-shadow">
@@ -67,8 +79,10 @@
 				</li>
 			</ul>
 		</nav>
+			
 	</div>
 </div>
+
 </header>
 <aside class="Hui-aside">
 	<div class="menu_dropdown bk_2">
