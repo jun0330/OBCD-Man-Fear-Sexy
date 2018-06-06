@@ -48,7 +48,7 @@ public class AdminController extends HttpServlet {
 			// 调用userService的方法
 			Admin a = as.adminLogin(adminAccount, adminPwd);
 			
-			if (null != a) {
+			if (null !=a) {
 				// 用户名和密码正确
 				
 			
