@@ -1,7 +1,8 @@
-package com.etc.dao;
+package com.etc.dao.impl;
 
 import java.util.List;
 
+import com.etc.dao.NavDao;
 import com.etc.entity.Nav;
 import com.etc.util.DBUtil;
 

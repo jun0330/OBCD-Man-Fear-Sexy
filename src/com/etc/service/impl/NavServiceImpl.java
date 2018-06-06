@@ -3,7 +3,7 @@ package com.etc.service.impl;
 import java.util.List;
 
 import com.etc.dao.NavDao;
-import com.etc.dao.NavDaoImpl;
+import com.etc.dao.impl.NavDaoImpl;
 import com.etc.entity.Nav;
 import com.etc.service.NavService;
 
